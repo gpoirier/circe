@@ -1,7 +1,6 @@
-package io.circe.time
+package io.circe
 
 import cats.kernel.Eq
-import io.circe.{ Decoder, Json }
 import io.circe.testing.CodecTests
 import io.circe.tests.CirceSuite
 import java.time.{ Duration, Instant, LocalDate, LocalDateTime, LocalTime, OffsetDateTime, Period, YearMonth, ZonedDateTime, ZoneId }

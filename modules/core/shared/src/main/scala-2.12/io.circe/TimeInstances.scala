@@ -1,6 +1,5 @@
 package io.circe
 
-import io.circe.{ Decoder, DecodingFailure, Encoder, Json }
 import java.time.{
   Duration,
   Instant,
@@ -20,12 +19,11 @@ import java.time.format.DateTimeFormatter.{
   ISO_OFFSET_DATE_TIME,
   ISO_ZONED_DATE_TIME
 }
+import TimeInstances._
 
 private[circe] object TimeInstances {
   final val yearMonthFormatter = DateTimeFormatter.ofPattern("yyyy-MM")
 }
-
-import TimeInstances._
 
 trait TimeDecoders {
 
