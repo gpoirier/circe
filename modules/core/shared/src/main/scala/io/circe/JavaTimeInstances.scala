@@ -21,7 +21,7 @@ import java.time.format.DateTimeFormatter.{
 }
 
 object JavaTimeInstances extends JavaTimeDecoders with JavaTimeEncoders {
-  private final val yearMonthFormatter = DateTimeFormatter.ofPattern("yyyy-MM")
+  private[circe] final val yearMonthFormatter = DateTimeFormatter.ofPattern("yyyy-MM")
 }
 
 private[circe] trait JavaTimeDecoders {
