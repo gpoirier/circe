@@ -20,8 +20,8 @@ import java.time.format.DateTimeFormatter.{
   ISO_ZONED_DATE_TIME
 }
 
-private[circe] object JavaTimeInstances {
-  final val yearMonthFormatter = DateTimeFormatter.ofPattern("yyyy-MM")
+object JavaTimeInstances extends JavaTimeDecoders with JavaTimeEncoders {
+  private final val yearMonthFormatter = DateTimeFormatter.ofPattern("yyyy-MM")
 }
 
 private[circe] trait JavaTimeDecoders {
