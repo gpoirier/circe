@@ -284,7 +284,7 @@ trait Decoder[A] extends Serializable { self =>
  *
  * @author Travis Brown
  */
-final object Decoder extends TupleDecoders with ProductDecoders with ScalaVersionDecoder with LowPriorityDecoders {
+final object Decoder extends TupleDecoders with ProductDecoders with ScalaVersionDecoders with LowPriorityDecoders {
   /**
    * @group Aliases
    */
